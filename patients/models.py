@@ -2,7 +2,7 @@ import uuid
 
 from django.db import models
 from django.urls import reverse
-
+from django.contrib.auth import get_user_model
 
 class Patients(models.Model):
     class PriorityChoices(models.TextChoices):
@@ -13,7 +13,7 @@ class Patients(models.Model):
     id = models.UUIDField(
         default=uuid.uuid4, blank=True, null=False, primary_key=True, db_index=True
     )
-
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
     firstName = models.CharField(max_length=150, blank=False)
     lastName = models.CharField(max_length=150, blank=False)
     age = models.PositiveIntegerField(blank=False)
