@@ -1,0 +1,30 @@
+body, html {
+    height: 100vh;
+}
+
+.container {
+    margin-top: 0.2%;
+    display: grid;
+    grid-template-columns: auto 85%;
+    /* grid */
+}
+
+
+
+header {
+    margin: 0px;
+    border-radius: 2.5px;
+    padding: 1%;
+    background-color: lightblue;
+}
+
+main {
+    margin: 0px;
+    padding: 0.8%;
+    background-color: beige;
+}
+
+footer {
+    border-radius: 2.5px;
+    background-color: blanchedalmond;
+}

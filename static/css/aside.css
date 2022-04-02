@@ -1,0 +1,31 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin:0%;
+    margin-right: 2%
+    /* padding:0%; */
+}
+
+
+.menu {
+    margin: 0%;
+    padding: 0%;
+}
+
+.menu-item {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    padding: 10;
+    margin: 0px;
+    border: 1;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+}
+.menu-item:hover {
+    padding: 15px;
+    background-color: rgba(0, 234, 255, 0.801);
+}
