@@ -1,5 +1,11 @@
-.vscode
-db.sqlite3
-myenv/
-env/
-venv/
+**/.vscode
+
+**/db.sqlite3
+
+myenv/*
+
+env/*
+
+venv/*
+
+**/__pycache__/**
