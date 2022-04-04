@@ -20,6 +20,3 @@ class patientsUpdateForm(forms.ModelForm):
     class Meta :
         model = patients
         fields = ['username','email']
-
-
-
