@@ -17,7 +17,21 @@ repos:
 #     hooks:
 #     -    id: black
 #     language_version: python3.6
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+    -   id: isort
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-safety
     rev: v1.2.4
     hooks:
     -   id: python-safety-dependencies-check
+        name: safety
+        entry: safety
+        args: [check, --full-report, --file]
+        files: requirements
+-   repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+    -   id: flake8
+        # additional_dependencies: [flake8-docstrings]
+        exclude: settings.py|models.py|migrations
